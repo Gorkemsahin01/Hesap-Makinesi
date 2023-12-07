@@ -1,15 +1,16 @@
-const sayiButton = document.getElementById('butonlar')
-const btn1 = document.querySelectorAll('btn')
-const hesaplama = document.getElementsByClassName('hesap')
+const tuslar = document.getElementById('butonlar')
+const calcScreen = document.getElementById('hesap')
 
-let a = sayiButton.innerText
-console.log(a)
+tuslar.addEventListener('click', function (event) {
+  const clickedButtonValue = event.target.innerText
+  console.log(clickedButtonValue)
 
-function ekranayazdirma() {
-  sayiButton.innerText = hesaplama
-}
+  appendValue()
+  function appendValue(value) {
+    calcScreen.value += clickedButtonValue
 
-let b = hesaplama.innerText
-console.log(b)
-
-sayiButton.addEventListener('click', ekranayazdirma)
+    if (appendValue(value) == '') {
+      calcScreen.value += clickedButtonValue
+    }
+  }
+})
