@@ -38,7 +38,7 @@ border-radius: 3rem ;
   background-color: aquamarine;
 }
 
-#hesap{
+#screen{
  width: 90%;
  margin: 2rem;
  padding: 2rem ;
@@ -46,4 +46,34 @@ border-radius: 3rem ;
 border-radius: 1rem;
 text-align: right;
 
+}
+
+#hesapla{
+  width: 8rem;
+  height: 8rem;
+  margin: 0.8rem;
+   font-size: 2rem;
+   color:royalblue;
+   background-color: black;
+ border-radius: 3rem ;
+   border-style:none;
+
+}
+
+#temizle{
+  width: 8rem;
+  height: 8rem;
+  margin: 0.8rem;
+   font-size: 2rem;
+   color:royalblue;
+   background-color: black;
+ border-radius: 3rem ;
+   border-style:none;
+}
+
+#temizle:hover{
+  background-color: aquamarine;
+}
+#hesapla:hover{
+  background-color: aquamarine;
 }
